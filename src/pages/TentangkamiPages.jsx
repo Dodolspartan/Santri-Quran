@@ -8,7 +8,7 @@ function TentangKamiPages() {
       Satri Al-Quran didirikan pada tahun 2023. Website ini bertujuan untuk memberikan kemudahan bagi siapa saja untuk membaca, mempelajari, dan memahami Al-Quran. 
       </p>
     </div>
-  )
+  );
 }
 
 export default TentangKamiPages;
