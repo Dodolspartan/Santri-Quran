@@ -5,7 +5,7 @@ import NavbarComponent from "./component/NavbarComponent";
 import FavoritPages from "./pages/FavoritPages";
 import SettingPages from "./pages/SettingPages";
 import Image from "./assets/image/Logo.png";
-import TentangKamiPages from "./pages/TentangKamiPages";
+import TentangkamiPages from "./pages/TentangkamiPages";
 import AlQuranComponent from "./component/AlQuranComponent";
 import AsmaulHusnaComponent from "./component/AsmaulHusnaComponent";
 import WiridComponent from "./component/WiridComponent";
@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<HomPages />} />
         <Route path="/favorite" element={<FavoritPages />} />
         <Route path="/setting" element={<SettingPages />} />
-        <Route path="/tentangkami" element={<TentangKamiPages />} />
+        <Route path="/tentangkami" element={<TentangkamiPages />} />
         <Route path="/AlQuran" element={<AlQuranComponent />} />
         <Route path="/AsmaulHusna" element={<AsmaulHusnaComponent />} />
         <Route path="/Wirid" element={<WiridComponent />} />
