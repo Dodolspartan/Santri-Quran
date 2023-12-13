@@ -1,6 +1,6 @@
 
 
-function TentangKamiPages() {
+function TentangkamiPages() {
   return (
     <div className='element_tentang_pg'>
       <h3 className='title_heading'>Tentang Kami</h3>
@@ -11,4 +11,4 @@ function TentangKamiPages() {
   );
 }
 
-export default TentangKamiPages;
+export default TentangkamiPages;
