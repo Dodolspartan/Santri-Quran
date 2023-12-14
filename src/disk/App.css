@@ -87,6 +87,7 @@ body{
 .nav_element_component .navbar {
   background: #008081;
   justify-content: space-between;
+  border-radius: 16px 16px 0 0;
 }
 
 .nav_element_component .navbar .nav-link {
