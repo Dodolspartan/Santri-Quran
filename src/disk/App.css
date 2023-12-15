@@ -11,7 +11,8 @@ body{
 }
 
 .pages_element_alyp .element_image {
-  width: 28%;
+  width: 25%;
+  padding-top: 10px;
 }
 
 /* Home Pages */
@@ -269,7 +270,7 @@ body{
 .element_alquran_pages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 60px 0 80px 0;
+  padding: 60px 10px 80px 10px;
   gap: 20px;
   font-family: "Raleway", sans-serif;
 }
@@ -282,22 +283,23 @@ body{
 .element_alquran_pages .card_element_alquran .title-ayat{
   font-weight: 600;
 }
-.element_alquran_pages .card_element_alquran span {
-  font-size: 13px;
+.element_alquran_pages .card_element_alquran .bg_text {
+  padding: 5px 7px;
+  font-size: 11px;
   font-weight: 600;
+  background: #008081;
+  color: #fff;
+  border-radius: 16px;
 }
 .element_alquran_pages .surah_links {
   text-decoration: none;
   color: #008081;
 }
-.element_alquran_page .card_element_alquran bg-primary{
-  background: #008081;
-}
 /* End */ 
 
 /* Element Detail Surah */
 .element_detail_surah{
-  padding: 60px 0 80px 0;
+  padding: 60px 10px 80px 10px;
   
 }
 .element_detail_surah .btn_back_surah{
@@ -326,4 +328,58 @@ body{
   justify-content: center;
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
+}
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 600px) {
+/* Page App */
+.pages_element_alyp {
+  width: 360px;
+  margin: auto;
+}
+
+.pages_element_alyp .element_image {
+  width: 25%;
+  padding-top: 10px;
+}
+
+/* Home Pages */
+.home_element_pages {
+  width: 360px;
+  margin: auto;
+  padding: 13px 10px;
+}
+
+/* End */
+
+/* Hero Pages */
+.hero_component_items .card_component_items {
+  display: grid;
+  padding: 20px 20px;
+  margin: 0px 0px 40px 0px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.hero_component_items .card_component_items .card_element_items {
+  width: 140px;
+  height: 141px;
+  padding: 30px 0;
+  border-radius: 15px;
+  border: 2px solid #004643;
+  background: #008081;
+  color: aliceblue;
+}
+
+.hero_component_items .card_component_items .card_element_items a {
+  padding: 5px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* End */
 }
