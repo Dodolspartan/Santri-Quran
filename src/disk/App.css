@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lateef:wght@500&display=swap');
 
-body{
+body {
   font-size: 25px;
 }
+
 /* Page App */
 .pages_element_alyp {
   width: 360px;
@@ -28,16 +29,19 @@ body{
 .element_juz_amma_items {
   padding: 30px 0 120px 0;
 }
+
 .element_juz_amma_items .card_element_items {
   padding: 10px;
   margin: 10px 0;
 }
+
 .element_juz_amma_items .card_element_items h6 {
   color: #008081;
   font-weight: 600;
   font-size: 15px;
   font-family: "Raleway", sans-serif;
 }
+
 .element_juz_amma_items .card_element_items p {
   font-weight: 500;
   font-size: 25px;
@@ -63,7 +67,7 @@ body{
   height: 141px;
   padding: 30px 0;
   border-radius: 15px;
-  border: 2px solid #004643;
+  border: 1px solid #004643;
   background: #008081;
   color: aliceblue;
 }
@@ -136,7 +140,7 @@ body{
 }
 
 .element_set_pages body.dark-mode {
-  background: #161616;
+  background: #E8FFE0;
 }
 
 .element_set_pages .element_vr_santri {
@@ -165,7 +169,8 @@ body{
   min-height: 530px;
   font-family: "Raleway", sans-serif;
 }
-.element_tentang_pg .title_heading{
+
+.element_tentang_pg .title_heading {
   font-weight: 600;
   color: #008081;
 }
@@ -182,38 +187,50 @@ body{
   padding: 20px 15px;
   margin: 10px 0;
 }
-.element_page_doa .element_card_items p{
+
+.element_page_doa .element_card_items p {
   font-weight: 500;
   color: #008081;
 }
-.element_page_doa .element_card_items h2{
+
+.element_page_doa .element_card_items h2 {
   text-align: right;
 }
 
 /* Element Asmaul Husna Pages */
+.pages-asmaul-husna {
+  padding: 20px 0;
+  font-family: "Raleway", sans-serif;
+}
+
 .element_pages_asmaulhusna {
-  padding: 80px 0;
+  padding: 30px 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
 .element_pages_asmaulhusna .element_card_items {
-  padding: 20px 16px;
+  padding: 30px 16px;
   font-size: 25px;
   text-align: center;
   border: 2px solid #008081;
   border-radius: 7px;
+  background: #E8FFE0;
 }
-.element_pages_asmaulhusna .element_card_items h3{
-  font-family: 'Lateef', serif;
 
+.element_pages_asmaulhusna .element_card_items h3 {
+  font-family: 'Lateef', serif;
+  color: #004643;
 }
-.element_pages_asmaulhusna .element_card_items p{
+
+.element_pages_asmaulhusna .element_card_items p {
   font-family: "Raleway", sans-serif;
   font-size: small;
   font-weight: 600;
+  color: #004643;
 }
+
 /* End */
 
 /* Element Bacaan Solat Pages */
@@ -258,7 +275,8 @@ body{
   margin: 20px 0;
   padding: 20px;
 }
-.element_wirid_pages .card_element_wirid .title_arab{
+
+.element_wirid_pages .card_element_wirid .title_arab {
   font-size: 25px;
   text-align: right;
   font-family: 'Lateef', serif;
@@ -267,57 +285,88 @@ body{
 /* End */
 
 /* Element Alquran Pages */
+.element_search_items {
+  font-family: "Raleway", sans-serif;
+  padding: 10px 7px;
+}
+
+.element_search_items input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 50px;
+  padding: 0px 20px;
+  border-radius: 30px;
+  color: #161616;
+  border: 1px solid #008081;
+  background: #E8FFE0;
+}
+
 .element_alquran_pages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 60px 10px 80px 10px;
+  padding: 60px 0 80px 0;
   gap: 20px;
   font-family: "Raleway", sans-serif;
+
 }
 
 .element_alquran_pages .card_element_alquran {
   padding: 20px 15px;
   border: 1px solid #008081;
   border-radius: 7px;
+  background: #E8FFE2;
 }
-.element_alquran_pages .card_element_alquran .title-ayat{
+
+.element_alquran_pages .card_element_alquran .title-ayat {
   font-weight: 600;
 }
-.element_alquran_pages .card_element_alquran .bg_text {
-  padding: 5px 7px;
-  font-size: 11px;
+
+.element_alquran_pages .card_element_alquran span {
+  font-size: 13px;
   font-weight: 600;
   background: #008081;
   color: #fff;
   border-radius: 16px;
 }
+
 .element_alquran_pages .surah_links {
   text-decoration: none;
   color: #008081;
 }
-/* End */ 
+
+.element_alquran_page .card_element_alquran bg-primary {
+  background: #008081;
+}
+
+/* End */
 
 /* Element Detail Surah */
-.element_detail_surah{
-  padding: 60px 10px 80px 10px;
-  
+.element_detail_surah {
+  padding: 60px 0 80px 0;
+
 }
-.element_detail_surah .btn_back_surah{
+
+.element_detail_surah .btn_back_surah {
   padding: 10px 15px;
   text-decoration: none;
   background: #004643;
   color: #fff;
 }
-.element_detail_surah .card_element_detail_surah{
+
+.element_detail_surah .card_element_detail_surah {
   padding: 30px 0;
 }
-.element_detail_surah  .row  .col-10 .element_ayat .float-end{
+
+.element_detail_surah .row .col-10 .element_ayat .float-end {
   font-family: 'Lateef', serif;
   text-align: right;
   margin: auto;
   font-size: 25px;
 }
-.element_detail_surah .element_nomer p{
+
+.element_detail_surah .element_nomer p {
   display: flex;
   width: 34px;
   height: 40px;
@@ -333,53 +382,109 @@ body{
 /* Mobile Responsive */
 
 @media only screen and (max-width: 600px) {
-/* Page App */
-.pages_element_alyp {
-  width: 360px;
-  margin: auto;
+
+  /* Page App */
+  .pages_element_alyp {
+    width: 360px;
+    margin: auto;
+  }
+
+  .pages_element_alyp .element_image {
+    width: 25%;
+    padding-top: 10px;
+  }
+
+  /* Home Pages */
+  .home_element_pages {
+    width: 360px;
+    margin: auto;
+    padding: 13px 10px;
+  }
+
+  /* End */
+
+  /* Hero Pages */
+  .hero_component_items .card_component_items {
+    display: grid;
+    padding: 20px 20px;
+    margin: 0px 0px 40px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .hero_component_items .card_component_items .card_element_items {
+    width: 140px;
+    height: 141px;
+    padding: 30px 0;
+    border-radius: 15px;
+    border: 2px solid #004643;
+    background: #008081;
+    color: aliceblue;
+  }
+
+  .hero_component_items .card_component_items .card_element_items a {
+    padding: 5px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* End */
 }
 
-.pages_element_alyp .element_image {
-  width: 25%;
-  padding-top: 10px;
-}
+/* Mobile Responsive */
 
-/* Home Pages */
-.home_element_pages {
-  width: 360px;
-  margin: auto;
-  padding: 13px 10px;
-}
+@media only screen and (max-width: 600px) {
 
-/* End */
+  /* Page App */
+  .pages_element_alyp {
+    width: 360px;
+    margin: auto;
+  }
 
-/* Hero Pages */
-.hero_component_items .card_component_items {
-  display: grid;
-  padding: 20px 20px;
-  margin: 0px 0px 40px 0px;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
+  .pages_element_alyp .element_image {
+    width: 25%;
+    padding-top: 10px;
+  }
 
-.hero_component_items .card_component_items .card_element_items {
-  width: 140px;
-  height: 141px;
-  padding: 30px 0;
-  border-radius: 15px;
-  border: 2px solid #004643;
-  background: #008081;
-  color: aliceblue;
-}
+  /* Home Pages */
+  .home_element_pages {
+    width: 360px;
+    margin: auto;
+    padding: 13px 10px;
+  }
 
-.hero_component_items .card_component_items .card_element_items a {
-  padding: 5px 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 12px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 500;
-}
+  /* End */
 
-/* End */
+  /* Hero Pages */
+  .hero_component_items .card_component_items {
+    display: grid;
+    padding: 20px 20px;
+    margin: 0px 0px 40px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .hero_component_items .card_component_items .card_element_items {
+    width: 140px;
+    height: 141px;
+    padding: 30px 0;
+    border-radius: 15px;
+    border: 2px solid #004643;
+    background: #008081;
+    color: aliceblue;
+  }
+
+  .hero_component_items .card_component_items .card_element_items a {
+    padding: 5px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* End */
 }
