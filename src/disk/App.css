@@ -285,24 +285,6 @@ body {
 /* End */
 
 /* Element Alquran Pages */
-.element_search_items {
-  font-family: "Raleway", sans-serif;
-  padding: 10px 7px;
-}
-
-.element_search_items input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 50px;
-  padding: 0px 20px;
-  border-radius: 30px;
-  color: #161616;
-  border: 1px solid #008081;
-  background: #E8FFE0;
-}
-
 .element_alquran_pages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
