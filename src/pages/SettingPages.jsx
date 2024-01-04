@@ -17,8 +17,7 @@ function SettingPages() {
             <Form.Check
               type="switch"
               id="ChangeTheme"
-              onChange={() => toggleTheme()} disabled
-            />
+              onChange={() => toggleTheme()} disabled/>
           </div>
         </ListGroup.Item>
         <ListGroup.Item className="d-flex justify-content-between align-items-start">
