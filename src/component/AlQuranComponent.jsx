@@ -1,7 +1,6 @@
 // AlQuranComponent.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import SearchComponent from "./SearchComponent";
 
 const AlQuranComponent = () => {
   const url = "https://quran-api.santrikoding.com/api/surah/";
@@ -23,7 +22,6 @@ const AlQuranComponent = () => {
 
   return (
     <div>
-    <SearchComponent />
       <div className="element_alquran_pages text-center">
       {surah.map((ayat) => (
           <div className="card_element_alquran" key={ayat.nomor}>
