@@ -28,7 +28,7 @@ const AlQuranComponent = () => {
             <Link className="surah_links" to={`/SurahDetail/${ayat.nomor}`}>
               <h3 className="title_text">{ayat.nama}</h3>
               <h6 className="title_ayat">{ayat.nama_latin}</h6>
-              <span className="bg_text d-flex">
+              <span className="bg_text">
                 {ayat.jumlah_ayat} {ayat.tempat_turun}
               </span>
             </Link>
