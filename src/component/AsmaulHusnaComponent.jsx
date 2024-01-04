@@ -3,6 +3,8 @@ import { asmaulHusna } from "../API/index"; // Make sure the path is correct
 
 function AsmaulHusnaComponent() {
   return (
+    <div className="pages-asmaul-husna">
+    <h3 className="text-center">Asmaul Husna</h3>
     <div className="element_pages_asmaulhusna">
       {asmaulHusna.map((asma) => (
         <div className="element_card_items" key={asma.id}>
@@ -10,6 +12,7 @@ function AsmaulHusnaComponent() {
           <p>{asma.latin}</p>
         </div>
       ))}
+    </div>
     </div>
   );
 }

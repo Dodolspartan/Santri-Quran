@@ -1,25 +1,23 @@
+import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
-import {
-  THEME,
-  initTheme,
-  toggleTheme,
-  setTheme,
-  resetTheme,
-} from "../disk/index";
+import { toggleTheme } from "../disk/index"; // Make sure to import only what you need
 
 function SettingPages() {
+  // Add a key prop to each ListGroup.Item if you're rendering them dynamically
+
   return (
     <div className="element_set_pages">
       <ListGroup>
         <ListGroup.Item className="d-flex justify-content-between align-items-start">
           Mode Gelap
           <div>
+            {/* Use onChange for Form.Check */}
             <Form.Check
               type="switch"
               id="ChangeTheme"
-              onClick={() => toggleTheme()}
+              onChange={() => toggleTheme()} disabled
             />
           </div>
         </ListGroup.Item>

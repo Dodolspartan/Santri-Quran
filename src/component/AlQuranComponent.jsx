@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Badge from "react-bootstrap/Badge";
 import { Link } from "react-router-dom";
+import SearchComponent from "./SearchComponent";
 
 const AlQuranComponent = () => {
   const url = "https://quran-api.santrikoding.com/api/surah/";
@@ -23,14 +24,15 @@ const AlQuranComponent = () => {
 
   return (
     <div>
+    <SearchComponent />
       <div className="element_alquran_pages text-center">
-        {surah.map((ayat) => (
+      {surah.map((ayat) => (
           <div className="card_element_alquran" key={ayat.nomor}>
             <Link className="surah_links" to={`/SurahDetail/${ayat.nomor}`}>
               <h3 className="title_text">{ayat.nama}</h3>
               <h6 className="title_ayat">{ayat.nama_latin}</h6>
-              <span>
-                <Badge bs="">{ayat.jumlah_ayat}</Badge> {ayat.tempat_turun}
+              <span className="bg_text">
+                {ayat.jumlah_ayat} {ayat.tempat_turun}
               </span>
             </Link>
           </div>
