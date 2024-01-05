@@ -288,7 +288,7 @@ body {
 .element_alquran_pages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 60px 15px 80px 15px;
+  padding: 60px 7px 80px 7px;
   gap: 20px;
   font-family: "Raleway", sans-serif;
 
