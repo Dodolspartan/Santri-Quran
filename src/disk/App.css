@@ -306,7 +306,7 @@ body {
 }
 
 .element_alquran_pages .card_element_alquran span {
-  display:flex;
+  padding:5px 7px;
   text-align:center;
   font-size: 13px;
   font-weight: 600;
