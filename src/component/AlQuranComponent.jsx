@@ -32,7 +32,7 @@ const AlQuranComponent = () => {
         </div>
       </div>
       <div className="element_alquran_pages text-center">
-        {surah.map((ayat) => (
+      {surah.map((ayat) => (
           <div className="card_element_alquran" key={ayat.nomor}>
             <Link className="surah_links" to={`/SurahDetail/${ayat.nomor}`}>
               <h3 className="title_text">{ayat.nama}</h3>

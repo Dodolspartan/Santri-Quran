@@ -248,9 +248,13 @@ body {
 }
 
 .element_page_doa .element_card_items h2 {
+<<<<<<< HEAD
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 600;
+=======
+  text-align: right;
+>>>>>>> bf59c6eb43cf80a063d6e030abdc20e3541328f2
 }
 
 /* Element Asmaul Husna Pages */
@@ -334,6 +338,10 @@ body {
 }
 
 .element_wirid_pages .card_element_wirid .title_arab {
+<<<<<<< HEAD
+=======
+  font-size: 25px;
+>>>>>>> bf59c6eb43cf80a063d6e030abdc20e3541328f2
   text-align: right;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -431,7 +439,11 @@ body {
 .element_alquran_pages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+<<<<<<< HEAD
   padding: 30px 15px 80px 15px;
+=======
+  padding: 60px 7px 80px 7px;
+>>>>>>> bf59c6eb43cf80a063d6e030abdc20e3541328f2
   gap: 20px;
   font-family: "Raleway", sans-serif;
 
@@ -449,7 +461,12 @@ body {
 }
 
 .element_alquran_pages .card_element_alquran span {
+<<<<<<< HEAD
   padding: 5px 7px;
+=======
+  padding:5px 7px;
+  text-align:center;
+>>>>>>> bf59c6eb43cf80a063d6e030abdc20e3541328f2
   font-size: 13px;
   font-weight: 600;
   background: #008081;
@@ -471,7 +488,10 @@ body {
 /* Element Detail Surah */
 .element_detail_surah {
   padding: 60px 15px 80px 15px;
+<<<<<<< HEAD
 
+=======
+>>>>>>> bf59c6eb43cf80a063d6e030abdc20e3541328f2
 }
 
 .element_detail_surah .btn_back_surah {
@@ -613,4 +633,8 @@ body {
   }
 
   /* End */
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bf59c6eb43cf80a063d6e030abdc20e3541328f2
