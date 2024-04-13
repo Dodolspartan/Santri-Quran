@@ -89,6 +89,11 @@ body {
   width: 360px;
 }
 
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #fff;
+}
+
 .nav_element_component .navbar {
   background: #008081;
   justify-content: space-between;
@@ -105,14 +110,62 @@ body {
 /* End */
 
 /* Favorite Element */
+.element_fav_pages {
+  min-height: 550px;
+  padding: 30px 10px;
+}
+
+.element_fav_pages .Card_surah_items {
+  padding: 20px 25px;
+  min-height: 300px;
+  margin: 20px 0;
+  background: #E8FFE0;
+  border-radius: 14px;
+  border: 1px solid #008081;
+}
+
+.element_fav_pages .Element_card_surah {
+  display: flex;
+  justify-content: space-between;
+}
+
+.element_fav_pages .Element_card_surah h6 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #004643;
+}
+
+.element_fav_pages .element_btn_items {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.element_fav_pages .element_btn_items .btn_items_surah {
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 11px 12px;
+  background: #E8FFE0;
+  color: #008081;
+  border-radius: 7px;
+  font-weight: 600;
+  border: 1px solid #008081;
+}
+
+.element_cari_surah_items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
 
 /* End */
 
 /* Element Setting Pages */
-.element_fav_pages {
-  min-height: 550px;
-  padding: 220px 20px;
-}
 
 .element_set_pages {
   min-height: 500px;
@@ -191,10 +244,13 @@ body {
 .element_page_doa .element_card_items p {
   font-weight: 500;
   color: #008081;
+  font-size: 15px;
 }
 
 .element_page_doa .element_card_items h2 {
-  text-align: right;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Element Asmaul Husna Pages */
@@ -251,7 +307,8 @@ body {
 
 .element_bacaansl_items .card_items_slt .text_bacaan {
   padding: 12px 0;
-  font-size: 25px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
   font-weight: 600;
   line-height: 35px;
   text-align: right;
@@ -277,21 +334,49 @@ body {
 }
 
 .element_wirid_pages .card_element_wirid .title_arab {
-  font-size: 25px;
   text-align: right;
-  font-family: 'Lateef', serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+/* End */
+
+/* Element Component Search */
+.element-search-items {
+  font-family: "Raleway", sans-serif;
+}
+
+.element-search-items h1 {
+  text-align: center;
+  font-size: 17px;
+}
+
+.element-search-items input {
+  padding: 10px 7px;
+  margin: 0px 10px;
+  width: 80%;
+  border-radius: 7px;
+  border: 1px solid #008081;
+}
+
+.element-search-items button {
+  padding: 10px 7px;
+  border-radius: 7px;
+  background: #008081;
+  color: #fff;
+  border: none;
 }
 
 /* End */
 
 /* Element Alquran Pages */
 .element_search_items {
+  display: flex;
   font-family: "Raleway", sans-serif;
-  padding: 10px 7px;
 }
 
 .element_search_items input {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   width: 350px;
@@ -303,10 +388,50 @@ body {
   background: #E8FFE0;
 }
 
+.element_search_items .Items_btn {
+  margin: 5px 5px;
+  position: relative;
+  background: #008081;
+  border: none;
+  width: 50px;
+  height: 40px;
+  color: #fff;
+  left: -53px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+
+/* Component Al-Quran */
+
+.component-al-quran .element-search-component input {
+  display: flex;
+  margin: auto;
+  width: 90%;
+  padding: 10px;
+  border-radius: 7px;
+  border: solid 1px #008081;
+}
+
+.component-al-quran .element-search-component .element-slide-surah {
+  display: flex;
+  margin: auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.component-al-quran .element-search-component .element-slide-surah a {
+  padding: 7px 10px;
+  background: #008081 ;
+  color: #fff;
+  font-size: 13px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
 .element_alquran_pages {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 30px 10px 80px 10px;
+  padding: 30px 15px 80px 15px;
   gap: 20px;
   font-family: "Raleway", sans-serif;
 
@@ -323,9 +448,9 @@ body {
   font-weight: 600;
 }
 
-.element_alquran_pages .card_element_alquran .bg_text {
+.element_alquran_pages .card_element_alquran span {
   padding: 5px 7px;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   background: #008081;
   color: #fff;
@@ -337,11 +462,15 @@ body {
   color: #008081;
 }
 
+.element_alquran_page .card_element_alquran bg-primary {
+  background: #008081;
+}
+
 /* End */
 
 /* Element Detail Surah */
 .element_detail_surah {
-  padding: 60px 10px 80px 10px;
+  padding: 60px 15px 80px 15px;
 
 }
 
@@ -374,6 +503,61 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Times New Roman', Times, serif;
+}
+
+/* Mobile Responsive */
+
+@media only screen and (max-width: 600px) {
+
+  /* Page App */
+  .pages_element_alyp {
+    width: 360px;
+    margin: auto;
+  }
+
+  .pages_element_alyp .element_image {
+    width: 25%;
+    padding-top: 10px;
+  }
+
+  /* Home Pages */
+  .home_element_pages {
+    width: 360px;
+    margin: auto;
+    padding: 13px 10px;
+  }
+
+  /* End */
+
+  /* Hero Pages */
+  .hero_component_items .card_component_items {
+    display: grid;
+    padding: 20px 20px;
+    margin: 0px 0px 40px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .hero_component_items .card_component_items .card_element_items {
+    width: 140px;
+    height: 141px;
+    padding: 30px 0;
+    border-radius: 15px;
+    border: 2px solid #004643;
+    background: #008081;
+    color: aliceblue;
+  }
+
+  .hero_component_items .card_component_items .card_element_items a {
+    padding: 5px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  /* End */
 }
 
 /* Mobile Responsive */

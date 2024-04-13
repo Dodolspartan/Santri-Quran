@@ -3,6 +3,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 import { toggleTheme } from "../disk/index"; // Make sure to import only what you need
+import Image1 from "../assets/image/icon/Mask group.png";
 
 function SettingPages() {
   // Add a key prop to each ListGroup.Item if you're rendering them dynamically
@@ -17,7 +18,8 @@ function SettingPages() {
             <Form.Check
               type="switch"
               id="ChangeTheme"
-              onChange={() => toggleTheme()} disabled
+              onChange={() => toggleTheme()}
+              disabled
             />
           </div>
         </ListGroup.Item>
@@ -35,8 +37,9 @@ function SettingPages() {
         </ListGroup.Item>
       </ListGroup>
       <div className="element_vr_santri text-center">
+        <img className="mb-3" src={Image1} width={20} alt="" />
         <h6>Santri Al-AlQuran</h6>
-        <p>Version 0.1</p>
+        <p>Version 0.2</p>
       </div>
     </div>
   );

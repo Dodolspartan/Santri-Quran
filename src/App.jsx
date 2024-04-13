@@ -1,4 +1,3 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomPages from "./pages/HomPages";
 import NavbarComponent from "./component/NavbarComponent";
@@ -18,12 +17,12 @@ function App() {
   return (
     <div className="pages_element_alyp">
       <div className="text-center">
-        <img className="element_image" src={Image} alt="Your Alt Text" />
+        <img className="element_image" src={Image} />
       </div>
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<HomPages />} />
-        <Route path="/favorite" element={<FavoritPages />}/>
+        <Route path="/favorite" element={<FavoritPages />} />
         <Route path="/setting" element={<SettingPages />} />
         <Route path="/tentangkami" element={<TentangkamiPages />} />
         <Route path="/AlQuran" element={<AlQuranComponent />} />

@@ -7,7 +7,7 @@ import image5 from "../assets/image/image 5.png";
 import image6 from "../assets/image/image6.png";
 
 // Data Icons Nav Links
-import icons1 from "../assets/image/icon/icon1.png";
+import icons1 from "../assets/image/icon/news.png";
 import icons2 from "../assets/image/icon/icon2.png";
 import icons3 from "../assets/image/icon/icon3.png";
 
@@ -63,7 +63,7 @@ export const navLink = [
     id: 2,
     path: "favorite",
     icon: icons1,
-    title: "Favorite",
+    title: "News",
   },
   {
     id: 3,
