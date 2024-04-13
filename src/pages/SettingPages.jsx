@@ -1,7 +1,6 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import { Link } from "react-router-dom";
-import { toggleTheme } from "../disk/index"; // Make sure to import only what you need
 function SettingPages() {
   // Add a key prop to each ListGroup.Item if you're rendering them dynamically
 
