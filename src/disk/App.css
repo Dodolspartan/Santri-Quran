@@ -438,6 +438,26 @@ body {
 
 }
 
+.element_alquran_pages .loading {
+  margin: 150px 140px;
+  border: 5px solid #EAF0F6;
+  border-radius: 50%;
+  border-top: 5px solid #004643;
+  width: 50px;
+  height: 50px;
+  animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .element_alquran_pages .card_element_alquran {
   padding: 20px 15px;
   border: 1px solid #008081;
@@ -490,7 +510,7 @@ body {
   font-family: 'Lateef', serif;
   text-align: right;
   margin: auto;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .element_detail_surah .element_nomer p {
