@@ -8,8 +8,8 @@ import image6 from "../assets/image/image6.png";
 
 // Data Icons Nav Links
 import icons1 from "../assets/image/icon/book.svg";
-import icons2 from "../assets/image/icon/icon2.png";
-import icons3 from "../assets/image/icon/icon3.png";
+import icons2 from "../assets/image/icon/home-2.svg";
+import icons3 from "../assets/image/icon/shop-add.svg";
 
 // Data Menu Links
 export const menuLinks = [
@@ -23,7 +23,7 @@ export const menuLinks = [
     id: 2,
     path: "Wirid",
     image: image1,
-    text: "Wirid",
+    text: "Wirid & Hadits",
   },
   {
     id: 3,
@@ -69,7 +69,7 @@ export const navLink = [
     id: 3,
     path: "setting",
     icon: icons3,
-    title: "Setting",
+    title: "Shop",
   },
 ];
 

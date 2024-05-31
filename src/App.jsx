@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import HomPages from "./pages/HomPages";
 import NavbarComponent from "./component/NavbarComponent";
-import FavoritPages from "./pages/FavoritPages";
 import SettingPages from "./pages/SettingPages";
 import Image from "./assets/image/Logo.png";
 import TentangkamiPages from "./pages/TentangkamiPages";
@@ -12,6 +11,7 @@ import JuzAmmaComponent from "./component/JuzAmmaComponent";
 import DoaComponent from "./component/DoaComponent";
 import BacaanSolatComponent from "./component/BacaanSolatComponent";
 import SurahDetailComponent from "./component/SurahDetailComponent";
+import NewsPages from "./pages/NewsPages";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<HomPages />} />
-        <Route path="/favorite" element={<FavoritPages />} />
+        <Route path="/news" element={<NewsPages />} />
         <Route path="/setting" element={<SettingPages />} />
         <Route path="/tentangkami" element={<TentangkamiPages />} />
         <Route path="/AlQuran" element={<AlQuranComponent />} />

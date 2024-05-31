@@ -89,8 +89,19 @@ body {
   width: 360px;
 }
 
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show {
+
+.nav_element_component .icon_element img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+  color: #004643;
+}
+
+.nav_element_component .nav-link.active {
+  color: #004643;
+}
+
+.nav_element_component .icon_element img {
   color: #fff;
 }
 
@@ -104,10 +115,71 @@ body {
   padding: 5px 0;
   font-weight: 600;
   font-size: 13px;
-  color: #fff;
 }
 
 /* End */
+/* Player Times */
+.prayer-times {
+  margin: 20px 20px 80px 20px;
+  padding: 20px;
+  border: 2px solid #008081;
+  border-radius: 10px;
+  font-family: inter;
+  background-color: #E8FFE2;
+}
+
+.prayer-times h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.prayer-times table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prayer-times th,
+.prayer-times td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #004643;
+}
+
+.prayer-times th {
+  background-color: #004643;
+  color: white;
+}
+
+.prayer-times tr:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Loading Spinner Styles */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #004643;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* Favorite Element */
 .element_fav_pages {

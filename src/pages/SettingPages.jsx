@@ -1,4 +1,5 @@
 import React from "react";
+import BeritaComponent from "../component/BeritaComponent";
 function SettingPages() {
   // Add a key prop to each ListGroup.Item if you're rendering them dynamically
 
