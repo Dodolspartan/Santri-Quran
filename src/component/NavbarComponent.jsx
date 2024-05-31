@@ -15,8 +15,7 @@ function NavbarComponent() {
             <NavLink
               to={nav.path}
               className="nav-link text-center mx-4"
-              activeClassName="active-link" // Add activeClassName
-            >
+              ClassName="active-link">
               <div className="icon_element">
                 <img src={nav.icon} alt={`${nav.title} icon`} />
               </div>

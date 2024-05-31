@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Col, Row } from "react-bootstrap";
-import { FaArrowLeft } from "react-icons/fa6";
 
 const SurahDetailComponent = () => {
   const { nomor } = useParams();
@@ -11,7 +10,7 @@ const SurahDetailComponent = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://quran-api.santrikoding.com/api/surah/${nomor}`
+          `https://quran-api.santrikoding.com/api/surah/${nomor}`,
         );
         const data = await response.json();
         setSurat(data);
