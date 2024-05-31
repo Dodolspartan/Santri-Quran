@@ -1,6 +1,4 @@
-// src/components/PrayerTimes.js
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 
 const BeritaComponent = () => {
   const [prayerTimes, setPrayerTimes] = useState({});
@@ -16,10 +14,14 @@ const BeritaComponent = () => {
       const city = "Jakarta";
 
       try {
-        const response = await axios.get(
+        const response = await fetch(
           `http://api.aladhan.com/v1/calendarByCity?city=${city}&country=Indonesia&method=2&month=${month}&year=${year}`,
         );
-        const todayTimes = response.data.data[today.getDate() - 1].timings;
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        const todayTimes = data.data[today.getDate() - 1].timings;
         setPrayerTimes(todayTimes);
         setLoading(false);
       } catch (error) {
