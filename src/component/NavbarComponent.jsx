@@ -12,10 +12,7 @@ function NavbarComponent() {
       <Navbar fixed="bottom" className="justify-content-center">
         {navLink.map((nav) => (
           <Nav className="justify-content-center" key={nav.id}>
-            <NavLink
-              to={nav.path}
-              className="nav-link text-center mx-4"
-              ClassName="active-link">
+            <NavLink to={nav.path} className="nav-link text-center mx-4">
               <div className="icon_element">
                 <img src={nav.icon} alt={`${nav.title} icon`} />
               </div>
