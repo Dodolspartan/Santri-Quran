@@ -15,7 +15,7 @@ const BeritaComponent = () => {
 
       try {
         const response = await fetch(
-          `http://api.aladhan.com/v1/calendarByCity?city=${city}&country=Indonesia&method=2&month=${month}&year=${year}`,
+          `https://api.aladhan.com/v1/calendarByCity?city=${city}&country=Indonesia&method=2&month=${month}&year=${year}`,
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
