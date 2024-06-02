@@ -21,8 +21,12 @@ const BeritaComponent = () => {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
-        const todayTimes = data.data[today.getDate() - 1].timings;
-        setPrayerTimes(todayTimes);
+        if (data && data.data && data.data[today.getDate() - 1]) {
+          const todayTimes = data.data[today.getDate() - 1].timings;
+          setPrayerTimes(todayTimes);
+        } else {
+          throw new Error("Invalid data format");
+        }
         setLoading(false);
       } catch (error) {
         setError("Error fetching prayer times");
