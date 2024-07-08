@@ -85,7 +85,7 @@ body {
 
 /* Navbar Component */
 .nav_element_component .navbar {
-  margin: auto;
+  margin: 20px auto;
   width: 360px;
 }
 
@@ -106,9 +106,10 @@ body {
 }
 
 .nav_element_component .navbar {
-  background: #008081;
+  background: #E8FFE0;
   justify-content: space-between;
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
+  border: 2px solid #004643;
 }
 
 .nav_element_component .navbar .nav-link {
